@@ -1,0 +1,19 @@
+<div>
+  <h1>Detail post</h1>
+  <button mat-raised-button color="primary" routerLink="/">Back
+    <mat-icon>undo</mat-icon>
+  </button>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center" style="height: 65vh; width: 80vh">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{post.id}} - {{post.title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="https://picsum.photos/80/65">
+    <mat-card-content>
+      <p>
+        {{post.body}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
